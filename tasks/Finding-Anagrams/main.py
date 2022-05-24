@@ -7,4 +7,4 @@
 def find_anagrams(word):
     # [assignment] doing [::-1] on an iterable, reverses it.
 
-    return racecar == racecar[::-1]
+    return word == word[::-1]
