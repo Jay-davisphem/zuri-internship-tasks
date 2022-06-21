@@ -1,0 +1,64 @@
+/* CSS HEX */
+:root {
+  --liver-organ: #723024ff;
+  --desert-sand-2: #dcc5abff;
+  --td-size: 120px;
+}
+table {
+  border-collapse: collapse;
+  padding: 5px;
+  border: 1px solid var(--liver-organ);
+  margin: 0 auto;
+}
+
+td {
+  width: var(--td-size);
+  height: min(var(--td-size), 95px);
+}
+
+.tr1 td,
+.tr2 td:nth-child(2n) {
+  background: var(--desert-sand-2);
+}
+
+.tr2 td,
+.tr1 td:nth-child(2n) {
+  background: var(--liver-organ);
+}
+
+.l1 {
+  width: calc(5 * var(--td-size));
+  padding: 5px;
+  border: 2px solid var(--liver-organ);
+  margin: 0 auto;
+}
+.l2 {
+  border: 2px solid var(--liver-organ);
+  padding: 10px;
+}
+
+.l3 {
+  background: var(--liver-organ);
+  padding: 25px;
+}
+
+.l4 {
+  background: var(--desert-sand-2);
+  padding: 15px;
+}
+
+.l5 {
+  border: 1px solid var(--liver-organ);
+  padding: 5px;
+}
+@media screen and (max-device-width: 600px) {
+  body {
+    width: 480px;
+  }
+  :root {
+    --td-size: 50px;
+  }
+  td {
+    height: min(var(--td-size), 25px);
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav_items'>
+                <a href='/'>
+                    <li>About Me</li>
+                </a>
+                <a href='/contact.html'>
+                    <li>Contact Me</li>
+                </a>
+                <a href='/register.html'>
+                    <li>Register</li>
+                </a>
+                <li class='inactive'>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class='headit'>Login</h1>
+        <form id='login-form' onSubmit='return'>
+            <input type='email' name='email' placeholder='Email' />
+            <input type='password' name='password' placeholder='**********' pattern='\w{6,}' />
+            <input type='submit' class='btn' value='Sign In' id='login-btn' /><span class='span'>&nbsp;</span>
+        </form>
+    </main>
+    <footer>Made with love by
+        <a href='https://github.com/jay-davisphem'>David Oluwafemi</a>.
+        Courtesy of <a href='https://zuri.team'>I4GxZURI</a>
+    </footer>
+    <script src='script.js'></script>
+</body>
+
+</html>

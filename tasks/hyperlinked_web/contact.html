@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav_items'>
+                <a href='/'>
+                    <li>About Me</li>
+                </a>
+                <li class='inactive'>Contact Me</li>
+                <a href='/register.html'>
+                    <li>Register</li>
+                </a>
+                <a href='/login.html'>
+                    <li>Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class='headit'>Contact Us</h1>
+        <form id='contact-form' onSubmit='return'>
+            <input type='email' name='email' id='email' placeholder='Email' />
+            <input name='name' id='name' placeholder='Name' />
+            <textarea name='message' id='message' placeholder='What can I offer you? '></textarea>
+            <input type='submit' id='submit-btm' class='btn' value='Send Message' /><span class='span'></span>
+        </form>
+    </main>
+    <footer>Made with love by
+        <a href='https://github.com/jay-davisphem'>David Oluwafemi</a>.
+        Courtesy of <a href='https://zuri.team'>I4GxZURI</a>
+    </footer>
+  <script src='script.js' defer></script>
+</body>
+
+</html>

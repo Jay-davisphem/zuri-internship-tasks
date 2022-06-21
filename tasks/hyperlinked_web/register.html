@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav_items'>
+                <a href='/'>
+                    <li>About Me</li>
+                </a>
+                <a href='/contact.html'>
+                    <li>Contact Me</li>
+                </a>
+                <li class='inactive'>Register</li>
+                <a href='/login.html'>
+                    <li>Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class='headit'>Create an Account</h1>
+        <form id='register_form' onSubmit='return'>
+            <input name='first-name' placeholder='First Name' />
+            <input name='last-name' placeholder='Last Name' />
+            <input type='tel' name='phone' placeholder='Phone Number' />
+            <span id='radio_btns' class='radio_btns'> <label class='gender' for='gender'>Gender</label>
+                <input type='radio' name='gender' value='Male' />
+                <input type='radio' name='gender' value='Female' />
+            </span>
+            <span class='nation'>
+                <input name='country' placeholder='Country' list='country-list' />
+                <select id='country-list' style='display: none;'>
+                    <option>Nigeria</option>
+                    <option>USA</option>
+                    <option>France</option>
+                    <option>England</option>
+                    <option>Ghana</option>
+                </select>
+                <input name='state' placeholder='State/Province' />
+            </span>
+            <input type='email' name='email' placeholder='Email' />
+            <input type='password' name='password' placeholder='**********' pattern='\w{6,}' />
+            <input type='password' name='confirm-password' placeholder='**********' pattern='\w{6,}' />
+            <input type='submit' value='Register' id='register-btn' class='btn' /><span class='span'>&nbsp;</span>
+        </form>
+    </main>
+    <footer>Made with love by
+        <a href='https://github.com/jay-davisphem'>David Oluwafemi</a>.
+        Courtesy of <a href='https://zuri.team'>I4GxZURI</a>
+    </footer>
+    <script src='script.js'></script>
+</body>
+
+</html>
