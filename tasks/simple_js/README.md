@@ -2,15 +2,13 @@
 
 This simple calculator app made use of prompt to read input because `javascript readline` isn't as cool as `python input`.
 To run calculator.js, please follow the following steps
-`node
+`
 
-// to install the single input dependencies
 
-npm init -y
+npm init -y # initialize package.json
 
-npm install prompt-sync
+npm install prompt-sync # to install the single input dependencies  
 
-// to run the calculator.js
 
-node calculator.js
+node calculator.js # to run the calculator.js
 `
