@@ -1,6 +1,10 @@
 // A cli Calculator app
 
 // Prompt interface
+/*
+ * Please install 'prompt-sync'.
+ * It's an input function my code depends on
+*/
 const input = require("prompt-sync")();
 
 const nonZeroNumber = () => {
